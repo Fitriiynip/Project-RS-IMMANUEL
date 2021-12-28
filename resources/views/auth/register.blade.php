@@ -24,7 +24,8 @@
           <h4>Form Daftar</h4>
         <small class="text-muted">Isi menggunakan data yang benar!</small>
         <div class="form-floating mb-3">
-          <input type="text" name="name" class="form-control @error('Nama') is-invalid @enderror" id="Nama" placeholder="name@example.com" required required value="{{ old('name') }}">
+          <input type="text" name="name" class="form-control @error('Nama') is-invalid @enderror"
+           id="Nama" placeholder="name@example.com" required required value="{{ old('name') }}">
           <label for="Nama">Nama</label>
           @error('Nama')
           <div class="invalid-feedback">
@@ -33,7 +34,8 @@
           @enderror
         </div>
         <div class="form-floating mb-3">
-          <input type="email" name="email" class="form-control @error('Email') is-invalid @enderror" id="Email" placeholder="name@example.com" required required value="{{ old('email') }}">
+          <input type="email" name="email" class="form-control @error('Email') is-invalid @enderror"
+          id="Email" placeholder="name@example.com" required required value="{{ old('email') }}">
           <label for="">Email</label>
           @error('Email')
           <div class="invalid-feedback">
